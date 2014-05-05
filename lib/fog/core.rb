@@ -10,6 +10,8 @@ require 'time'
 require 'timeout'
 require 'ipaddr'
 
+Excon.defaults[:ssl_verify_peer] = false
+
 # internal core dependencies
 require "fog/version"
 require 'fog/core/attributes'
